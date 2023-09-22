@@ -1,10 +1,72 @@
+<!DOCTYPE html>
 <html>
-<head><h1>Register</h1></head>
-<body>Email:<input></input>
-Password:<input type=password></input>
-Confirm password:<input type=password></input>
-<a href="login.html"<button>Submit</button></body>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+    Email: <input type="text" placeholder="Enter your email">
+    Password: <input type="password" placeholder="Enter your password">
+    Confirm password: <input type="password" placeholder="Confirm password">
+    <button type="submit">Submit</button>
+</form>
 <br>
 <a href="forgot-password.html">Forgot Password</a>
 <footer></footer>
+</body>
 </html>
