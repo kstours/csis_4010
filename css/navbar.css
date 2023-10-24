@@ -1,0 +1,20 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    background-color: #3494E6; /* Blue background */
+    margin-right: 1px; /* Add some margin for spacing between buttons */
+    border-radius: 5px; /* Rounded corners */
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    color: white; /* White text */
+    text-decoration: none; /* Remove underlines for links */
+}

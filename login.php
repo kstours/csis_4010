@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="css/navbar.css">
 
 <h1>Login</h1>
 

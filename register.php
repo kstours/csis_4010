@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="css/navbar.css">
 
 <h1>Register</h1>
 <form action="register_process.php" method="POST">

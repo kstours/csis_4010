@@ -1,7 +1,7 @@
 <?php
 #actually make this function
 ?>
-<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="css/navbar.css">
 
 <h1>Reset Password</h1>
 
