@@ -1,56 +1,43 @@
 <!DOCTYPE html>
 <script src="javaScript/toast.js"></script>
 <script src="javaScript/search.js"></script>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/navbar.css">
+<title>Recipe Finder</title>
 
-<?php include ('conn.php') ?>
-
+<?php //include ('conn.php') ?>
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="css/navbar.css"
 </head>
+
 <body>
-<link rel="stylesheet" href="css/index.css">
-<header></header>
 
-<?php
+<header>
+    <?php include ('navbar.php') ?>
 
-if($_SESSION["username"] == null){
-    ?>
-    <nav>
-    <ul>
-        <li><a href="login.php">Login</a></li>
-        <li><a onclick="showToast('You must be logged access that page!',1000)">Upload</a></li>
-        <li><a onclick="showToast('You must be logged access that page!',1000)">Favorites</a></li>
-    </ul>
-</nav>
-
-<?php
-}else{ ?>
-    <nav>
-    <ul>
-        <li><a href="logout.php">Logout</a></li>
-        <li><a href="settings">Settings</a></li>
-        <li><a href="upload">Upload</a></li>
-        <li><a href="favorites">Favorites</a></li>
-    </ul>
-</nav>
-<?php } ?>
+</header>
 
 
-<div class="recipe-finder-header">
-    <h2>Recipe Finder</h2>
-</div>
+
+<main>
+    <div class="recipe-finder-header">
+        <h1>Recipe Finder</h1>
+    </div>
+    <div class="search-container">
+        <label for="searchQuery"></label><input type="text" placeholder="Search..." id="searchQuery">
+        <button type="submit" onclick="performSearch()">Search</button>
+    </div>
+</main>
 
 
-<div class="search-container">
-    <input type="text" placeholder="Search..." id="searchQuery">
-    <button type="submit" onclick="performSearch()">Search</button>
-</div>
-<main></main>
-<footer></footer>
+<footer>
+
+</footer>
+
+
 </body>
 </html>

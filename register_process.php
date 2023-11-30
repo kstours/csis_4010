@@ -1,9 +1,11 @@
 <?php
-include('conn.php');
+//include('conn.php');
 
-// Now, you can access $connection here since it was declared in conn.php
 
 $error = "";
+if ($_POST["email"] == ""){
+    $error .= "Email is required</br>";
+}
 
 if ($_POST["username"] == ""){
     $error .= "Username is required</br>";
@@ -11,6 +13,17 @@ if ($_POST["username"] == ""){
 if ($_POST["password"] == ""){
     $error .= "Password is required</br>";
 }
+
+if ($_POST["cpassword"] == ""){
+    $error .= "Confirm Password</br>";
+}
+
+
+if($_POST["password"] != $post["cpassword"]){
+    $error .= "Passwords Do not Match!</br>";
+
+}
+
 
 if ($error != "") {
     include("register.php");

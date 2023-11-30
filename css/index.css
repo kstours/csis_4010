@@ -1,7 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #ffffff, #3494E6);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: linear-gradient(to bottom, #ffffff, #3494E6) no-repeat fixed;
     background-size: cover;
     margin: 0;
 }
@@ -31,8 +29,9 @@ body {
     margin: 20px 0;
 }
 
-.recipe-finder-header h2 {
+.recipe-finder-header h1 {
     font-size: 24px;
+    font-family: Futura, serif;
     color: #3494E6;
 }
 

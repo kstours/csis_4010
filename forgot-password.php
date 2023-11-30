@@ -1,23 +1,48 @@
-<?php
-#actually make this function
-?>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/forgot.css">
 <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
-<h1>Reset Password</h1>
+<?php include('navbar.php'); ?>
 
-<form action="" method="POST">
-    <?php if(isset($error)) ?>
-    <?php echo $error ?><br>
-    Email: <input type="text" name="Email"></br></br>
-    <input type="submit" value="Reset">
-</form>
-<form action="register.php">
-    Need an account?
-    <input type="submit" value="Register">
-</form>
-<form action="login.php">
-   Have an account?
-    <input type="submit" value="Login">
-</form>
+<title>Recipe Finder</title>
+<div class="recipe-finder-header">
+    <h1>Recipe Finder</h1>
+</div>
 
 
+
+
+<div class="forgotBackground">
+    <div class="forgotContainer">
+
+        <a href="login.php">
+            <img src="img/closeButton.png" alt="closeButton" class="close">
+        </a>
+
+
+
+        <h1>Forgot Password</h1>
+        <div class="errors">
+            <?php if(isset($error)) ?>
+            <?php echo $error ?><br>
+        </div>
+
+
+        <div class="textBoxes">
+            <form action="forgot-password_process.php" method="POST">
+                Email:  <input type="text" name="email"></br></br>
+
+
+                <div class ="registerButton">
+                    <input type="submit" value="Reset Password">
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+    </div>
+</div>
