@@ -50,6 +50,15 @@
     background-color: #1F6AA6;
 }
 
+.errors{
+    color: #FF0000;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+
+    transform: translate(40%,60%);
+}
+
 
 
 .loginRegister input[type="submit"] {

@@ -1,10 +1,10 @@
 <?php
-include("conn.php");
+//include("conn.php");
 
 $username = mysqli_real_escape_string($connection,$_POST["username"]);
 $password = mysqli_real_escape_string($connection,$_POST["password"]);
 
-$res = mysqli_query($connection,"select * from users where username = '$username'") or die ("Unable to connect to database");
+$res = mysqli_query($connection,"select * from dbusers where username = '$username'") or die ("Unable to connect to database");
 $row = mysqli_fetch_assoc($res);
 
 $error = "";

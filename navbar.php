@@ -1,6 +1,7 @@
 <script src="javaScript/toast.js"></script>
 
 <?php
+
 if($_SESSION["username"] == null){
     ?>
     <title>Recipe Finder</title>

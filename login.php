@@ -2,7 +2,8 @@
 <link rel="stylesheet" type="text/css" href="css/login.css">
 <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
-<?php  include ('navbar.php')?>
+<?php  include ('navbar.php');
+//include('conn.php');?>
 
 <title>Recipe Finder</title>
 <div class="recipe-finder-header">

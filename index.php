@@ -31,6 +31,15 @@
         <label for="searchQuery"></label><input type="text" placeholder="Search..." id="searchQuery">
         <button type="submit" onclick="performSearch()">Search</button>
     </div>
+
+<div class="recipeThumbnail">
+
+</div>
+
+
+
+
+
 </main>
 
 

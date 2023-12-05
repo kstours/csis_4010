@@ -2,9 +2,9 @@
 <link rel="stylesheet" type="text/css" href="css/register.css">
 <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
-<?php include('navbar.php'); ?>
-
-<title>Recipe Finder</title>
+<?php  include ('navbar.php');
+//include('conn.php');?>
+/<title>Recipe Finder</title>
 <div class="recipe-finder-header">
     <h1>Recipe Finder</h1>
 </div>

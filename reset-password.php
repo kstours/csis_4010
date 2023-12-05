@@ -29,8 +29,9 @@
 
 
         <div class="textBoxes">
-            <form action="forgot-password_process.php" method="POST">
+            <form action="reset-password-process.php" method="POST">
                 Email:  <input type="text" name="email"></br></br>
+                Code:   <input type="text" name="code"></br></br>
                 <div class ="registerButton">
                     <input type="submit" value="Reset Password">
                 </div>
