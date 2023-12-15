@@ -9,27 +9,37 @@
     transform: translate(-50%, -50%);
 }
 
-.forgotContainer h1{
+.forgotContainer h1 {
     position: absolute;
     top: 5%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.textBoxes{
+.textBoxes {
     position: absolute;
     top: 50%;
     left: 50%;
 
-    transform: translate(-65%,-50%);
+    transform: translate(-65%, -50%);
 }
-.errors{
+
+.errors {
     color: #FF0000;
     position: absolute;
     top: 30%;
     left: 60%;
 
-    transform: translate(40%,60%);
+    transform: translate(40%, 60%);
+}
+
+.good {
+    color: #00FF00;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+
+    transform: translate(40%, 60%);
 }
 
 
@@ -40,9 +50,10 @@
     left: 95%;
     transform: translate(50%, 50%);
 }
-.confirmPassword{
 
-    transform: translate(57%,-90%);
+.confirmPassword {
+
+    transform: translate(57%, -90%);
 }
 
 .registerButton input[type="submit"] {
@@ -60,7 +71,7 @@
 
     top: 100%;
     left: 60%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 

@@ -1,4 +1,4 @@
-function showToast(message, duration){
+function showToast(message, duration) {
     var toast = document.createElement("div");
     toast.className = "toast";
     toast.textContent = message;

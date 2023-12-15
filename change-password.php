@@ -2,8 +2,9 @@
 <link rel="stylesheet" type="text/css" href="css/forgot.css">
 <link rel="stylesheet" type="text/css" href="css/navbar.css">
 
-<?php include('conn.php');
-include('navbar.php');
+<?php include('navbar.php');
+include('conn.php');
+$email = urldecode($_GET['email']);
 ?>
 <title>Recipe Finder</title>
 <div class="recipe-finder-header">
@@ -14,12 +15,8 @@ include('navbar.php');
 <div class="forgotBackground">
     <div class="forgotContainer">
 
-        <a href="login.php">
-            <img src="img/closeButton.png" alt="closeButton" class="close">
-        </a>
 
-
-        <h1>Forgot Password</h1>
+        <h1>Change Password</h1>
         <div class="errors">
             <?php if (isset($error)) ?>
             <?php echo $error ?><br>
@@ -27,11 +24,14 @@ include('navbar.php');
 
 
         <div class="textBoxes">
-            <form action="reset-password-process.php" method="POST">
-                Email: <input type="text" name="email"></br></br>
-                Code: <input type="text" name="code"></br></br>
+            <form action="change-password_process.php" method="POST">
+                <input type="hidden" name="reset_email" value="<?php echo $email; ?>">
+                Password:<br>
+                <input type="password" name="password"></br></br>
+                Confirm Password:
+                <input type="password" name="cpassword"></br></br>
                 <div class="registerButton">
-                    <input type="submit" value="Reset Password">
+                    <input type="submit" value="Change Password">
                 </div>
             </form>
         </div>
