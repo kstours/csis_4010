@@ -11,8 +11,9 @@
 <body>
 
 <?php
-include('navbar.php');
 include('conn.php');
+include('navbar.php');
+
 ?>
 
 <div class="recipe-finder-header">
